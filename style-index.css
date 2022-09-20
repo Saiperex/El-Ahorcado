@@ -11,5 +11,14 @@ body
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(3px);
     border-radius: 20px;
-    box-shadow: 10px -10px 5px 0px rgba(0,0,0,0.46)
+    box-shadow: 10px -10px 5px 0px rgba(0,0,0,0.46);
+    text-align: center;
+    color: white;
+}
+.inicio h1
+{
+    font-family: 'Josefin Slab', serif;
+    font-size: 10vh;
+    padding: 20px 0;
+    text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
 }
