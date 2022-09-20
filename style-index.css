@@ -22,3 +22,42 @@ body
     padding: 20px 0;
     text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
 }
+.jugar-acercade
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px;
+    border-radius: 20px;
+}
+.jugar-acercade div
+{
+    color: black;
+    background-color: transparent;
+    margin: 20px;
+    border: solid 2px black;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
+.jugar-acercade button
+{
+    width: 50%;
+    height: 50px;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    padding: 0;
+}
+.jugar-acercade p
+{
+    padding: 10px;
+    font-size: 30px;
+}
+.jugar-acercade img
+{
+    width: 50%;
+    height: 50%;
+    margin-top: 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
