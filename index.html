@@ -25,7 +25,7 @@
             </div>
             <div class="acercade">
                 <img src="imagenes/monoculo.jpg" alt="">
-                <button class="btn-acercade" id="btn-acercade">Acerca de</button>
+                <button class="btn-acercade" id="btn-acercade" onclick="ocultarAcerca()">Acerca de</button>
                 <p>¡Eres curioso Camarada! Lastima que los curiosos viven poco.</p>
             </div>
         </div>
@@ -34,12 +34,29 @@
             <input type="text" id="nombre">
             <button class="boton2" onclick="ocultarNombre()">Aceptar</button>
         </div>
+        <div class="tipo-juego" id="tipo-juego">
+            <div class="tipo-juego-rapido">
+                <button class="muerte-rapida">
+                    <img src="imagenes/balazo.jpg" alt="">
+                    Muerte rapida
+                </button>
+                <legend>Sin limite de tiempo... Para que lo disfrutes.</legend>
+            </div>
+            <div class="tipo-juego-tiempo">
+                <button class="muerte-tiempo">
+                    <img src="imagenes/reloj.jpg" alt="">
+                    Tus segundos contados
+                </button>
+                <legend>Tienes dos minutos para adivinar<br> Pero aun con toda una vida no podrás</legend>
+            </div>
+            
+        </div>
     </section>
 
 
     <!--Alerta-->
     <div class="alert" id="alert">
-        <legend id="texto"></legend>
+        <p id="texto"></p>
         <div>
             <button id="ocultar-alerta" onclick="ocultaralerta()">OK</button>
         </div>

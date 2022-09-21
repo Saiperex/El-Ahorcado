@@ -96,9 +96,55 @@ body
     padding: 0;
     font-size: 20px;
 }
+/*Fin nombre*/
+/*Tipo de juego*/
+.tipo-juego
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px;
+    border-radius: 20px;
+}
+.tipo-juego div
+{
+    margin: 20px;
+    color: black;
+    background-color: transparent;
+    border: solid 2px black;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
+.tipo-juego button
+{
+    background-color: white;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Josefin Slab', serif;
+    padding: 10px;
+    border: solid 2px black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tipo-juego img/*necesita ser modificado*/
+{
+    width: 20vw;
+    height: 20vh;
+    display: block;
+    padding: 10px;
+    margin: 10px auto;
+    
+}
+.tipo-juego legend
+{
+    color: black;
+    font-size: 30px;
+    padding: 20px;
+}
 
 
-
+/*fin tipo de juego*/
+/*alerta editable*/
 .alert
 {
     color: black;
@@ -131,7 +177,7 @@ body
     padding: 0;
     font-size: 20px;
 }
-.alert legend
+.alert p
 {
     font-size: 25px;
     font-family: 'Josefin Slab', serif;
@@ -139,7 +185,34 @@ body
     margin: auto;
 }
 /*Configuraciones Momentaneas*/
-.nombre-jugador,.alert
+.nombre-jugador,.alert,.tipo-juego
 {
     display: none;
+}
+
+/*Responsive*/
+@media screen and (max-width: 480px)
+{
+    .inicio/*Esto queda asi*/
+    {
+        width: 90vw;
+        height: 90vh;
+        margin: 5vh 5vw;
+    }
+    .jugar-acercade, .tipo-juego /*Estas coonfig se repiten*/
+    {
+        margin: 2px 0;
+    }
+    .jugar-acercade div, .tipo-juego div
+    {
+        margin: 2px;
+    }
+    .jugar-acercade img,.tipo-juego img
+    {
+        width: 80%;
+    }
+    .jugar-acercade p, .tipo-juego legend
+    {
+        font-size: 14px;
+    }
 }
