@@ -48,16 +48,98 @@ body
     text-align: center;
     padding: 0;
 }
-.jugar-acercade p
+.jugar-acercade p /*Volverlo invisible en el responsive*/
 {
     padding: 10px;
     font-size: 30px;
 }
-.jugar-acercade img
+.jugar-acercade img /*Editar los tamaños en el responsive*/
 {
     width: 50%;
     height: 50%;
     margin-top: 10px;
     border: solid 2px black;
     border-radius: 10px;
+}
+/*finalizado primer div*/
+/*Comenzando segundo div*/
+.nombre-jugador
+{
+    margin: 10% 10px;
+    border-radius: 20px;
+    border: solid 2px black;
+    height: 40%;
+    color: black;
+    font-size: 30px;
+}
+.nombre-jugador legend
+{
+    margin:10px 0;
+}
+.nombre-jugador input
+{
+    width: 50%;
+    height: 30px;/*Esto editarlo en el responsive*/
+    margin: 20px auto;
+    display: block;
+    font-size: 25px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+}
+.nombre-jugador button /*Editar button para responsive*/
+{
+    width: 30%;
+    height: 50px;
+    border: solid 2px black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+}
+
+
+
+.alert
+{
+    color: black;
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: solid 2px black;
+}
+.alert div
+{
+    
+    align-items: center;
+}
+.alert button
+{
+    width: 30%;
+    height: 50px;
+    border: solid 2px black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+}
+.alert legend
+{
+    font-size: 25px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    margin: auto;
+}
+/*Configuraciones Momentaneas*/
+.nombre-jugador,.alert
+{
+    display: none;
 }
