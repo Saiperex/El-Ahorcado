@@ -20,6 +20,11 @@ function ocultarNombre()
     }
     
 }
+function ocultartodo()
+{
+    document.getElementById("inicio").style.display="none";
+    document.getElementById("juego").style.display="grid";
+}
 function ocultarAcerca()
 {
     var alerta= document.getElementById("texto");

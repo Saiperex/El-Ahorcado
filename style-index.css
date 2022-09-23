@@ -97,6 +97,7 @@ body
     font-size: 20px;
 }
 /*Fin nombre*/
+
 /*Tipo de juego*/
 .tipo-juego
 {
@@ -141,9 +142,8 @@ body
     font-size: 30px;
     padding: 20px;
 }
-
-
 /*fin tipo de juego*/
+
 /*alerta editable*/
 .alert
 {
@@ -184,16 +184,62 @@ body
     font-weight: bold;
     margin: auto;
 }
+/*Fin alerta*/
+/*Comienzo juego*/
+.juego
+{
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh 10vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    box-shadow: 10px -10px 5px 0px rgba(0,0,0,0.46);
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: 
+    "cuerpo1 cuerpo2" 
+    "cuerpo3 cuerpo3";
+    border: solid 3px black;
+    box-sizing: border-box;
+}
+.juego canvas
+{
+    width: 99%;
+    height: 99%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.46);
+    border-radius: 20px;
+}
+.div-botones
+{
+    width: 99%;
+    height: 99%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.46);
+    border-radius: 20px;
+}
+.palabra
+{
+    grid-area: cuerpo3;
+    width: 99%;
+    height: 99%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.46);
+    border-radius: 20px;
+}
 /*Configuraciones Momentaneas*/
-.nombre-jugador,.alert,.tipo-juego
+.nombre-jugador,.alert,.tipo-juego,.juego
 {
     display: none;
 }
-
 /*Responsive*/
 @media screen and (max-width: 480px)
 {
-    .inicio/*Esto queda asi*/
+    .inicio,.juego/*Esto queda asi*/
     {
         width: 90vw;
         height: 90vh;

@@ -15,7 +15,7 @@
     <title>BIenvenido</title>
 </head>
 <body>
-    <section class="inicio">
+    <section class="inicio" id="inicio">
         <h1>El ahorcado</h1>
         <div class="jugar-acercade" id="jugar-acercade">
             <div class="jugar">
@@ -36,7 +36,7 @@
         </div>
         <div class="tipo-juego" id="tipo-juego">
             <div class="tipo-juego-rapido">
-                <button class="muerte-rapida">
+                <button class="muerte-rapida" onclick="ocultartodo()">
                     <img src="imagenes/balazo.jpg" alt="">
                     Muerte rapida
                 </button>
@@ -52,8 +52,26 @@
             
         </div>
     </section>
+    
+    <div class="juego" id="juego">
+        
+        <canvas>
 
+        </canvas>
 
+        <div class="div-botones">
+            <button class="disparar" id="disparar">
+                <img src="pistola" alt="disparo">
+                <legend>disparar</legend>
+            </button>
+            <button class="pista" id="pista">
+                <img src="pista" alt="pista">
+                <legend>pista</legend>
+            </button>
+        </div>
+        <div class="palabra">
+        </div>
+    </div>
     <!--Alerta-->
     <div class="alert" id="alert">
         <p id="texto"></p>
