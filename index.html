@@ -55,22 +55,23 @@
     
     <div class="juego" id="juego">
         
-        <canvas>
+        <canvas class="juego-canvas">
 
         </canvas>
 
         <div class="div-botones">
-            <button class="disparar" id="disparar">
-                <img src="pistola" alt="disparo">
+            <button class="disparar" id="disparar" onmousedown="sonidoDisparo.play()">
+                <img src="imagenes/disparar.png" alt="disparo">
                 <legend>disparar</legend>
             </button>
-            <button class="pista" id="pista">
-                <img src="pista" alt="pista">
+            <button class="pista" id="pista" onclick="mostrarPista()">
+                <img src="imagenes/brujula.png" alt="pista">
                 <legend>pista</legend>
             </button>
         </div>
-        <div class="palabra">
-        </div>
+        <canvas class="palabra">
+                
+        </canvas>
     </div>
     <!--Alerta-->
     <div class="alert" id="alert">

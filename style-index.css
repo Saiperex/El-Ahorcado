@@ -198,7 +198,7 @@ body
     text-align: center;
     color: white;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 70% 30%;
     grid-template-rows: 70% 30%;
     grid-template-areas: 
     "cuerpo1 cuerpo2" 
@@ -206,7 +206,7 @@ body
     border: solid 3px black;
     box-sizing: border-box;
 }
-.juego canvas
+.juego-canvas
 {
     width: 99%;
     height: 99%;
@@ -214,6 +214,7 @@ body
     background-color: rgba(0,0,0,0.46);
     border-radius: 20px;
 }
+/*Juego-div botones*/
 .div-botones
 {
     width: 99%;
@@ -221,6 +222,25 @@ body
     margin: auto;
     background-color: rgba(0,0,0,0.46);
     border-radius: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    gap:5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.div-botones button
+{
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Josefin Slab', serif;
+}
+.div-botones img
+{
+    height: 50%;
+    margin: 0 auto;
 }
 .palabra
 {
@@ -231,8 +251,10 @@ body
     background-color: rgba(0,0,0,0.46);
     border-radius: 20px;
 }
+/*fin juego-div botones*/
+/*fin juego*/
 /*Configuraciones Momentaneas*/
-.nombre-jugador,.alert,.tipo-juego,.juego
+.nombre-jugador,.alert,.tipo-juego,.inicio
 {
     display: none;
 }
@@ -249,7 +271,7 @@ body
     {
         margin: 2px 0;
     }
-    .jugar-acercade div, .tipo-juego div
+    .jugar-acercade div, .tipo-juego div,
     {
         margin: 2px;
     }
@@ -257,8 +279,17 @@ body
     {
         width: 80%;
     }
-    .jugar-acercade p, .tipo-juego legend
+    .jugar-acercade p, .tipo-juego legend, .div-botones button
     {
         font-size: 14px;
+    }
+    .div-botones
+    {
+        gap: 0;
+        padding: 0;
+    }
+    .div-botones img
+    {
+        width: 100%;
     }
 }
