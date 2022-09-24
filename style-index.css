@@ -254,7 +254,7 @@ body
 /*fin juego-div botones*/
 /*fin juego*/
 /*Configuraciones Momentaneas*/
-.nombre-jugador,.alert,.tipo-juego,.inicio
+.nombre-jugador,.alert,.tipo-juego,.juego
 {
     display: none;
 }
@@ -271,7 +271,7 @@ body
     {
         margin: 2px 0;
     }
-    .jugar-acercade div, .tipo-juego div,
+    .jugar-acercade div, .tipo-juego div
     {
         margin: 2px;
     }
