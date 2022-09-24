@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style-index.css">
     <script src="script-index.js"></script>
+    <script src="style-game.js"></script>
     <link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
     <title>BIenvenido</title>
 </head>
 <body>
-    <audio preload="auto" autoplay loop src="sonidos/intro.mp3"></audio>
+    <audio preload="metadata" autoplay="true" loop="true" src="sonidos/intro.mp3"></audio>
     <section class="inicio" id="inicio">
         <h1>El ahorcado</h1>
         <div class="jugar-acercade" id="jugar-acercade">
@@ -37,7 +38,7 @@
         </div>
         <div class="tipo-juego" id="tipo-juego">
             <div class="tipo-juego-rapido">
-                <button class="muerte-rapida" onclick="ocultartodo()">
+                <button class="muerte-rapida" onclick="ocultartodo(),botonJugando()">
                     <img src="imagenes/balazo.jpg" alt="">
                     Muerte rapida
                 </button>
