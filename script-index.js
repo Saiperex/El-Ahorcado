@@ -36,12 +36,6 @@ function ocultarAcerca()
     alerta.textContent="Juego desarrolado por Xavier Medina. El Ahrocado. Proyecto realizado Para el Challenge II de Oracle One en colaboracion con Alura Latam";
     document.getElementById("alert").style.display="grid";
 }
-function mostrarPista()
-{
-    document.getElementById("alert").style.display="grid";
-    var alerta= document.getElementById("texto");
-    alerta.textContent="La pista es: No hay pista";
-}
 function ocultaralerta()
 {
     document.getElementById("alert").style.display="none";
