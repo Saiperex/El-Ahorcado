@@ -16,7 +16,7 @@
     <title>BIenvenido</title>
 </head>
 <body>
-    <audio preload="metadata" autoplay="true" loop="true" src="sonidos/intro.mp3"></audio>
+    <audio preload="auto" autoplay="true" loop="true" src="sonidos/intro.mp3"></audio>
     <section class="inicio" id="inicio">
         <h1>El ahorcado</h1>
         <div class="jugar-acercade" id="jugar-acercade">
@@ -71,9 +71,16 @@
                 <legend>pista</legend>
             </button>
         </div>
-        <canvas class="palabra" id="palabra">
-                
-        </canvas>
+        <div class="palabra" id="palabra">
+            <div class="palabra-container">
+                <ul class="letras" id="letras">
+
+                </ul>
+            </div>
+            <div class="auxilio">
+
+            </div>
+        </div>
     </div>
     <!--Alerta-->
     <div class="alert" id="alert">

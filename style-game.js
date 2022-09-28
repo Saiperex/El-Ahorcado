@@ -37,7 +37,8 @@ function botonJugando()
 {
     palabraSecreta=consiguiendoPalabra()
     console.log(palabraSecreta);
-    dibujarPalabra();
+    escribirLi();
+    
 }
 /*Hacer que el boton de pistas te devuelva la categoria*/
 function mostrarPista()
@@ -46,3 +47,59 @@ function mostrarPista()
     var alerta= document.getElementById("texto");
     alerta.textContent="La palabra está en la categoria: "+categorias[I];
 }
+/*Cargar li deacuerdo al nro de letras */
+function escribirLi()
+{
+   
+    var ul = document.getElementById("letras");
+    for(let i=0;i<palabraSecreta.length;i++)
+    {
+        var newLi = document.createElement("li");
+        var id="li"+i;
+        var clase="letra";
+        newLi.id=id;
+        newLi.className=clase;
+        ul.appendChild(newLi);
+        document.getElementById(id).innerHTML = "🕱";
+    }
+}
+/*Aca si comienza el programa*/
+/*hacer que tome la letra y la reemplaze en las calaveritas*/
+/*Funcion que toma lo ingresado en el teclado*/
+function teclado()
+{
+    var letra=""
+   document.addEventListener("keydown", function(event)
+   {
+        letra=event.key;
+        var contiene=comprobarLetra(letra);
+        console.log("la letra es "+letra+" y el valor es "+ contiene);
+        mostrarLetrasLi(contiene,letra);
+   })
+}
+/*Funcion que comprueba que esa letra está o no en la palabra */
+function comprobarLetra(letra)
+{
+    var booleano=false;
+    if(palabraSecreta.includes(letra))
+    {
+        booleano=true;
+    }
+    return booleano
+}
+function mostrarLetrasLi(valor,letra)
+{
+    if(valor==true)
+    {
+        for(let i=0;i<palabraSecreta.length;i++)
+        {
+            if(palabraSecreta.charAt(i)==letra)
+            {
+                var id="li"+i;
+                console.log("posicion:"+i);
+                document.getElementById(id).innerHTML = letra;
+            }
+        }
+    }
+}
+teclado();

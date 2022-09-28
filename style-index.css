@@ -250,9 +250,46 @@ body
     margin: auto;
     background-color: rgba(0,0,0,0.46);
     border-radius: 20px;
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 /*fin juego-div botones*/
 /*canvas palabra*/
+.palabra-container
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+.letras
+{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    box-sizing: border-box;
+}
+.letra
+{
+    display: inline-block;
+    margin: 10px;
+    font-size: 40px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    color: black;
+    text-decoration:underline;
+    box-sizing: border-box;
+}
+.auxilio
+{
+    width: 100%;
+    height: 99%;
+    border-radius: 0 20px 20px 0;
+    background-color: white;
+}
 /*fin juego*/
 /*Configuraciones Momentaneas*/
 .nombre-jugador,.alert,.tipo-juego,.juego
@@ -292,5 +329,19 @@ body
     .div-botones img
     {
         width: 100%;
+    }
+    .letras
+    {
+        margin: 0;
+        width: 100%;
+    }
+    .letra
+    {
+        margin: 0;
+        font-size: 30px;
+    }
+    .palabra-container
+    {
+        padding-top: 25%;
     }
 }
